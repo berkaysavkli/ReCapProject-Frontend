@@ -15,6 +15,7 @@ export class ColorComponent implements OnInit {
 
   ngOnInit(): void {
     this.getColors();
+    
   }
 
   getColors() {
@@ -31,6 +32,7 @@ export class ColorComponent implements OnInit {
 
   clearCurrentColor(){
     this.currentColor=null;
+    
   }
 
   getCurrentColorClass(color: Color) {
@@ -39,6 +41,16 @@ export class ColorComponent implements OnInit {
     } 
     else {
       return 'list-group-item';
+    }
+  }
+
+  getAllColorClass() {
+    if (!this.currentColor) {
+      return 'list-group-item active';
+    } 
+    else {
+      return 'list-group-item';
+      
     }
   }
 }

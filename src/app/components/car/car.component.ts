@@ -28,21 +28,7 @@ export class CarComponent implements OnInit {
         this.getCars();
       }
     });
-    /*this.activatedRoute.params.subscribe(params => {
-      if (params["brandId"]) {
-        this.getCarsByBrand(params["brandId"]);
-      } else {
-        this.getCars();
-      }
-    });
-
-    this.activatedRoute.params.subscribe(params => {
-      if (params["colorId"]) {
-        this.getCarsByColor(params["colorId"]);
-      } else {
-        this.getCars();
-      }
-    });*/
+   
   }
 
   getCars() {
